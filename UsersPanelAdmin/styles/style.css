@@ -1,0 +1,30 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+.hat {
+  height: auto;
+  padding: 5px;
+  background-color: cornflowerblue;
+}
+
+.text_name {
+  font-size: 35px;
+  color: black;
+  animation: glitch 0,5s linear infinite;
+}
+
+@keyframes glitch {
+  0%, 100% {
+    text-shadow: -1,5px -1,5px 0 #0ff, 1,5px 1,5px 0 #f00;
+  }
+  25% {
+    text-shadow: 1,5px 1,5px 0 #0ff, -1,5px -1,5px 0 #f00;
+  }
+  50% {
+    text-shadow: 1,5px -1,5px 0 #0ff, -1,5px 1,5px 0 #f00;
+  }
+  75% {
+    text-shadow: 1,5px 1,5px 0 #0ff, 1,5px -1,5px 0 #f00;
+  }
+}
